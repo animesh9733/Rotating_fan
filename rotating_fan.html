@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Fan</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        button{
+            width: 130px;height: 50px;
+            outline: none;
+            font-weight: 700;
+            
+        }
+        switch{
+            text-align: center;
+        }
+        #off{
+            margin-right: 100px;
+            background-color: gray;
+            border: 1px solid gray;
+            border-radius: 8px;
+            outline: none;
+        }
+        #on{
+            background-color: green;
+            border: 1px solid green;
+            outline: none;
+            border-radius: 8px;
+
+        }
+        #off:hover{
+            background-color: rgb(83, 78, 78);
+            cursor: pointer;
+            color: white;
+        }
+        #on:hover{
+            background-color: rgb(7, 87, 7);
+            cursor: pointer;
+            color: white;
+        }
+
+
+    </style>
+    <script>
+        function on(){
+            document.getElementById("img").src="https://i.postimg.cc/rp3sW29j/rotating-fan.gif";
+        }
+        function off(){
+            document.getElementById("img").src="https://i.postimg.cc/cHxY9S3S/rotating-fan.jpg";
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <h2>rotating fan</h2>
+    <div>
+        <img  id="img"  src="https://i.postimg.cc/cHxY9S3S/rotating-fan.jpg" alt="stopfan">
+        
+       
+    </div>
+    <div id="switch">
+    <button id="off" onclick="off()">Off</button>
+    <button id="on" onclick="on()">On</button>
+</div>
+</body>
+</html>
